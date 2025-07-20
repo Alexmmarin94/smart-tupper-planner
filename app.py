@@ -3,6 +3,10 @@
 import streamlit as st
 from utils.tupper_assistant import get_answer_to_question
 
+st.write("API Key:", st.secrets.get("OPENROUTER_API_KEY", "Missing API Key"))
+st.write("Base URL:", st.secrets.get("OPENROUTER_BASE_URL", "Missing Base URL"))
+st.write("LLM Model:", st.secrets.get("LLM_MODEL", "Missing LLM Model"))
+
 # -------------------------------------------------------------
 # Streamlit app configuration
 # Set page title and icon for the browser tab
