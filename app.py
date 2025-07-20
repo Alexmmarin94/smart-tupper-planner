@@ -1,11 +1,8 @@
 # app.py
 
+__import__('pysqlite3')
 import sys
-import os
-
-if os.environ.get("IS_STREAMLIT_CLOUD", "0") == "1":
-    import pysqlite3
-    sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 
 import streamlit as st
