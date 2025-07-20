@@ -8,6 +8,13 @@ This project was created for **educational purposes and personal use**, as the a
 
 ---
 
+### 🔗 Live Demo
+
+You can test the live assistant here:  
+**👉 [Nococinomas Assistant – Streamlit App](https://smart-tupper-planner-kkqcctszrk9q2ymsjedc8t.streamlit.app/)**  
+
+---
+
 ## What This Project Is (and Is Not)
 
 - ❌ This is **not a chatbot**.  
@@ -156,15 +163,6 @@ The app is ideal for demoing or embedding into internal tools, and can be deploy
 - Local execution (`streamlit run app.py`)
 - Sharing via `Streamlit Community Cloud`
 - Embedding in web portals (via iframe or wrapper)
-
----
-
-### 🔗 Live Demo
-
-You can test the live assistant here:  
-**👉 [Nococinomas Assistant – Streamlit App](https://smart-tupper-planner-kkqcctszrk9q2ymsjedc8t.streamlit.app/)**  
-
----
 
 ---
 
