@@ -397,3 +397,16 @@ OPENROUTER_API_KEY=sk-or-v1-3c...            # Replace with your actual OpenRout
 OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
 LLM_MODEL=openai/gpt-4.1-mini                # You can change this to any model supported by OpenRouter
 ```
+
+Also, the code is made for **Streamlit Cloud deployment** that requires a workaround to ensure SQLite compatibility (`pysqlite3`). 
+
+If you're testing locally and encounter issues related to `sqlite3`, make sure to **remove** the following fallback logic from both `app.py` and `tupper_assistant.py`:
+
+```python
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+```
+
+
+
