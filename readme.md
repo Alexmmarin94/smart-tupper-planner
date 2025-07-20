@@ -162,7 +162,7 @@ The app is ideal for demoing or embedding into internal tools, and can be deploy
 ### 🔗 Live Demo
 
 You can test the live assistant here:  
-**👉 [Nococinomas Assistant – Streamlit App]([https://your-deployment-url-here](https://smart-tupper-planner-kkqcctszrk9q2ymsjedc8t.streamlit.app/))**  
+**👉 [Nococinomas Assistant – Streamlit App](https://smart-tupper-planner-kkqcctszrk9q2ymsjedc8t.streamlit.app/)**  
 *(Replace with your actual deployment URL once available)*
 
 ---
