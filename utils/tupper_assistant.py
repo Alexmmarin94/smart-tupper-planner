@@ -1,5 +1,14 @@
 # utils/tupper_assistant.py
 
+import sys
+import os
+
+if os.environ.get("IS_STREAMLIT_CLOUD", "0") == "1":
+    import pysqlite3
+    sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+
+
+
 from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain_core.documents import Document
@@ -10,6 +19,7 @@ from utils.openai_router_wrapper import ChatOpenRouter
 import os
 from dotenv import load_dotenv
 from pathlib import Path
+
 
 # -----------------------------------------------------------------------------
 # VECTORSTORE SETUP (CHROMA + EMBEDDINGS)
@@ -31,11 +41,20 @@ chroma_path = base_dir.parent / "chroma_db"
 embedding = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
 # Connect to Chroma DB
-vectordb = Chroma(
-    persist_directory=str(chroma_path),
-    embedding_function=embedding,
-    collection_name="menu_platos"
-)
+try:
+    # Try loading from disk (for local development)
+    vectordb = Chroma(
+        persist_directory=str(chroma_path),
+        embedding_function=embedding,
+        collection_name="menu_platos"
+    )
+except:
+    # Fallback to in-memory (for Streamlit Cloud)
+    vectordb = Chroma(
+        embedding_function=embedding,
+        collection_name="menu_platos"
+    )
+
 
 # Retrieve and cache documents for future operations (broad query for dish-related docs)
 all_docs = vectordb.similarity_search("plato", k=300)
