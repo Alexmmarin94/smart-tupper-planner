@@ -163,7 +163,8 @@ The app is ideal for demoing or embedding into internal tools, and can be deploy
 
 You can test the live assistant here:  
 **👉 [Nococinomas Assistant – Streamlit App](https://smart-tupper-planner-kkqcctszrk9q2ymsjedc8t.streamlit.app/)**  
-*(Replace with your actual deployment URL once available)*
+
+---
 
 ---
 
@@ -171,9 +172,204 @@ You can test the live assistant here:
 
 In case the assistant becomes temporarily inaccessible — for example, if the current OpenAI API key runs out of credits — we include **screenshot previews** of the assistant’s functionality below.
 
-Each screenshot will be accompanied by a **short description in English** to illustrate the input, reasoning, and output.
+Each screenshot is fully translated into English to illustrate the assistant’s input, reasoning, and output.
 
-This ensures the project remains understandable and auditable even if the hosted version goes down.
+---
+
+#### 📸 Screenshot 1 – Gluten-free high-fat meals for weight gain
+
+![Screenshot 1](screenshots/screenshot_1.png)
+
+**User input:**  
+"I'm in a weight gain phase and have celiac disease. What are your highest-fat options?"
+
+**Assistant output:**  
+Here are your gluten-free options with the highest fat content, ideal for weight gain:
+
+1. **Keto Chocolate Hazelnut Brownie**
+   - Fat: 35.8 g  
+   - Protein: 7.8 g  
+   - Calories: 291  
+   - Price: €4.95  
+   - Weight: 180 g  
+
+2. **Chicken with Creamy Pesto**
+   - Fat: 13.5 g  
+   - Protein: 13.7 g  
+   - Calories: 183  
+   - Price: €6.90  
+   - Weight: 380 g  
+
+3. **Eggplant and Meat Casserole**
+   - Fat: 13.0 g  
+   - Protein: 8.8 g  
+   - Calories: 168  
+   - Price: €6.35  
+   - Weight: 380 g  
+
+4. **Pepper Steak**
+   - Fat: 11.2 g  
+   - Protein: 19.4 g  
+   - Calories: 186  
+   - Price: €8.20  
+   - Weight: 380 g  
+
+5. **Salmon with Yogurt and Dill Sauce**
+   - Fat: 16.4 g  
+   - Protein: 10.3 g  
+   - Calories: 206  
+   - Price: €8.40  
+   - Weight: 380 g  
+
+Would you like help planning an order with these options?
+
+---
+
+#### 📸 Screenshot 2 – Keto-compatible side dishes and desserts
+
+![Screenshot 2](screenshots/screenshot_2.png)
+
+**User input:**  
+"I'm on a Keto diet. Do you have any side dishes or desserts I can add?"
+
+**Assistant output:**  
+To support your Keto plan, I recommend the following side dishes and desserts:
+
+1. **Keto or Ketogenic Pancakes**
+   - Protein: 8.4 g  
+   - Calories: 150  
+   - Price: €4.15  
+   - Vegetarian, Keto, diabetic-friendly  
+
+2. **Keto Cheesecake (dessert)**
+   - Protein: 6.5 g  
+   - Calories: 162  
+   - Price: €4.65  
+   - Vegetarian, Keto, diabetic-friendly  
+
+3. **Mini Keto Cheesecake (dessert)**
+   - Protein: 11.2 g  
+   - Calories: 103  
+   - Price: €4.95  
+   - Vegetarian, Keto, diabetic-friendly  
+
+4. **Keto Chocolate Hazelnut Brownie (dessert)**
+   - Protein: 7.8 g  
+   - Calories: 291  
+   - Price: €4.95  
+   - Vegetarian, Keto, diabetic-friendly  
+
+These options are compatible with a Keto diet and can complement your main dishes. Would you like help planning an order?
+
+---
+
+#### 📸 Screenshot 3 – 2-week low-fat lunch plan under €100
+
+![Screenshot 3](screenshots/screenshot_3.png)
+
+**User input:**  
+"Create a 2-week lunch plan, low in fat, under €100, and with at least 2 meals suitable for freezing. I don’t mind repeating meals."
+
+**Assistant output:**  
+Here’s a 2-week (14-day) lunch plan, low in fat, with at least 2 freeze-friendly dishes, under €100:
+
+1. **Beef with Vegetables**
+   - Fat: 4.2 g  
+   - Price: €7.35  
+   - Freezer-friendly: Yes  
+
+2. **Chicken with Vegetables**
+   - Fat: 2.7 g  
+   - Price: €6.15  
+   - Freezer-friendly: Yes  
+
+3. **Hake in Green Sauce with Vegetables**
+   - Fat: 0.4 g  
+   - Price: €7.85  
+   - Freezer-friendly: Yes  
+
+4. **Pinto Beans with Veggies and Ham**
+   - Fat: 3.6 g  
+   - Price: €6.55  
+   - Freezer-friendly: Yes  
+
+5. **Cauliflower with Garlic and Paprika**
+   - Fat: 3.8 g  
+   - Price: €5.85  
+   - Freezer-friendly: Yes  
+
+**Suggested plan (with repetitions):**
+
+- Day 1: Beef with Vegetables (€7.35)  
+- Day 2: Chicken with Vegetables (€6.15)  
+- Day 3: Hake in Green Sauce with Vegetables (€7.85)  
+- Day 4: Pinto Beans with Veggies and Ham (€6.55)  
+- Day 5: Cauliflower with Garlic and Paprika (€5.85)  
+- Day 6: Beef with Vegetables (€7.35)  
+- Day 7: Chicken with Vegetables (€6.15)  
+- Day 8: Hake in Green Sauce with Vegetables (€7.85)  
+- Day 9: Pinto Beans with Veggies and Ham (€6.55)  
+- Day 10: Cauliflower with Garlic and Paprika (€5.85)  
+- Day 11: Beef with Vegetables (€7.35)  
+- Day 12: Chicken with Vegetables (€6.15)  
+- Day 13: Hake in Green Sauce with Vegetables (€7.85)  
+- Day 14: Pinto Beans with Veggies and Ham (€6.55)  
+
+**Estimated total cost:** €92.95  
+All meals are low in fat and freezer-friendly.  
+Would you like help placing your order?
+
+---
+
+#### 📸 Screenshot 4 – Vegetarian meals with the most protein
+
+![Screenshot 4](screenshots/screenshot_4.png)
+
+**User input:**  
+"What are your highest-protein vegetarian meals?"
+
+**Assistant output:**  
+Here are the vegetarian meals with the most protein:
+
+1. **Keto or Ketogenic Bread**
+   - Protein: 23.3 g  
+   - Price: €7.95  
+   - Calories: 304  
+   - Vegan: Yes  
+   - Lactose-free: Yes  
+
+2. **Heura Tacos (includes tortillas)**
+   - Protein: 11.1 g  
+   - Price: €6.95  
+   - Calories: 135  
+   - Vegan: Yes  
+   - Lactose-free: Yes  
+
+3. **Mini Keto Cheesecake**
+   - Protein: 11.2 g  
+   - Price: €4.95  
+   - Calories: 103  
+   - Vegetarian, not vegan  
+   - Contains dairy  
+
+4. **Keto Chocolate Hazelnut Brownie**
+   - Protein: 7.8 g  
+   - Price: €4.95  
+   - Calories: 291  
+   - Vegetarian, not vegan  
+   - Lactose-free  
+
+5. **Heura Nuggets with Potatoes**
+   - Protein: 7.8 g  
+   - Price: €4.95  
+   - Calories: 145  
+   - Vegan  
+   - Lactose-free  
+
+Would you like help planning an order with any of these?
+
+---
+
 
 
 ---
