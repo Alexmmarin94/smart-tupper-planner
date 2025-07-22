@@ -12,6 +12,9 @@ This project was created for **educational purposes and personal use**, as the a
 
 You can test the live assistant here:  
 **👉 [Nococinomas Assistant – Streamlit App](https://smart-tupper-planner-kkqcctszrk9q2ymsjedc8t.streamlit.app/)**  
+> ⚠️ The app may appear inactive due to sleeping from inactivity.  
+> This is intentional, as I avoid abusing empty auto-commits to respect fair usage of the shared Streamlit Cloud space.  
+> If you'd like to wake it up to test it, feel free to contact me at: [alexbmeist@gmail.com](mailto:alexbmeist@gmail.com)
 
 ---
 
