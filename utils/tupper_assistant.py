@@ -244,10 +244,13 @@ def get_answer_to_question(question: str) -> str:
     4. Formats the final context.
     5. Generates a natural language answer with recommendations.
     """
+
     try:
         filters = filter_chain.invoke({"question": question})
-    except Exception:
-        return "❌ No se pudieron interpretar los filtros de la pregunta."
+    except Exception as exc:
+        raise RuntimeError(
+            f"Filter extraction failed ({type(exc).__name__}): {exc}"
+        ) from exc
 
     filtered_docs = apply_filters(all_docs, filters)
     formatted_docs = [format_doc(doc) for doc in filtered_docs]
